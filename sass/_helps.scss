@@ -1,0 +1,15 @@
+//Mixin para estableser ancho total en base al tamaño del layout
+
+@mixin fullLayoutCss{
+    .Full-Layout{
+        max-width:$FullLayout;
+    }
+}
+
+//Mixin para estableser ancho total en base al contenedor
+
+@mixin fullCss{
+    .Full{
+        max-width:$Full;
+    }
+}

@@ -1,0 +1,56 @@
+/**
+    ArronaGrid es una libreria sass para la maquetacion de sitios web contruida con la especificacion css flexbox
+    Importe este achivo en su proyecto para empezar usarlo
+**/
+
+// Variables globales
+
+$Core   :css !default; //Compila todo el core correspondiente. Acepta 2 valores sass(por defecto y recomendado) y css.
+$Version:all !default; //Soporte para caracteristicas css. Acepta 3 valores all(por defecto), grid, beta.
+
+/**
+    Selectore para el container y el item
+    puedes modificarlos de acuerdo a las necesidaes del tu proyecto
+**/
+
+$nameSpace  : ag                       !default;
+$Container  : #{$nameSpace}-container  !default;
+$Item       : #{$nameSpace}-item       !default;
+
+// Ancho maximo para los contenedores
+
+$Max-Width  : 1200px    !default;
+
+// Ancho total para los contenedores
+
+$FullLayout       : 100vh     !default; //Ancho total en base al tamaño del layout
+$Full             : 100%      !default; //Ancho total en base al tamaño del contenedor
+
+// Variables para la creacion de una rejilla
+
+$Column:12;
+$Row:   12;
+
+// Separacion entre los items
+$Gap       :1rem !default;
+
+// Breckpoints
+
+$Breackpoints : (
+    xs: 240px,
+    s:  320px,
+    m:  480px,
+    st: 600px,
+    t:  768px,
+    l:  1024px,
+    xl: 1200px
+)   !default;
+
+@import "sass/base.scss";
+@import "sass/buttons.scss";
+@import "sass/mediaQuery.scss";
+@import "sass/flexbox.scss";
+@import "sass/grid.scss";
+@import "sass/core.scss";
+@import "sass/helps.scss";
+@import "sass/corecss.scss";

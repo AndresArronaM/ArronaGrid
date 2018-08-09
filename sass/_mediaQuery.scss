@@ -1,0 +1,11 @@
+@mixin MediaQuery($Breackpoint){
+    @if map-has-key($Breackpoints,$Breackpoint){
+        @if $Breackpoint == xs{
+            @content;
+        }@else{
+            @media screen and (min-width:#{map-get($Breackpoints,$Breackpoint)}){
+                @content;
+            }
+        }
+    }
+}

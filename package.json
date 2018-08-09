@@ -1,0 +1,39 @@
+{
+  "name": "arronagrid",
+  "version": "0.1.0",
+  "description": "Libreria sass para la maquetacion de sitios web",
+  "main": "arronagrid.scss",
+  "style": "public/css/arronagrid.css",
+  "sass": "arronagrid.scss",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresArronaM/ArronaGrid.git"
+  },
+  "author": "Andres Arrona Montoya",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AndresArronaM/ArronaGrid/issues"
+  },
+  "homepage": "https://github.com/AndresArronaM/ArronaGrid#readme",
+  "dependencies": {
+    "autoprefixer": "^9.1.0",
+    "autoprefixer-core": "^6.0.1",
+    "cssnano": "^4.0.5",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  }
+}

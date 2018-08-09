@@ -1,0 +1,12 @@
+#Soporte para los navegadores
+
+>=1%
+
+Explorer >= 10
+Edge >= 12
+Chrome >= 29
+Android >= 4.4
+Firefox >= 28
+Safari >= 9
+iOS >= 9.2
+Opera >= 17

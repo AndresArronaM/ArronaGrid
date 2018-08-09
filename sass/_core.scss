@@ -1,0 +1,38 @@
+/// Mixin para determinar el tipo de Layout.
+
+@mixin Layout($Display){
+    @if $Display == flex{
+        display     : flex;
+        @include wrap(w);
+    }@else if $Display == grid{
+        display     : grid;
+    }@else{
+        @warn "Error valor no permitido";
+    }
+}
+
+@mixin LayoutCss($Display){
+    .#{$nameSpace}-layout-#{$Display}{
+        @include Layout($Display);
+    }
+}
+
+/// Mixin para la creacion de un ag-container.
+/// Descripcion.
+/// Hace que un elemento se convierta en un flex o grid container.
+
+@mixin container($Display){
+    max-width       : $Max-Width;
+    margin-left     : auto      ;
+    margin-right    : auto      ;
+    width           : 100%      ;
+    @include Layout($Display)   ;
+}
+
+@mixin containerCss($Display){
+    .#{$Container}-#{$Display}{
+        @include container($Display);
+    }
+}
+
+

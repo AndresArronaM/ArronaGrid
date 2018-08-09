@@ -1,0 +1,27 @@
+/// Mixin para la creacion de un ag-button.
+/// Descripcion.
+/// Da los estilos basicos para un boton.
+
+@mixin button {
+    display         : inline-block  ;
+    padding         : .8em 1.4em    ;
+    cursor          : pointer       ;
+    border          : none          ;
+    text-decoration : none          ;
+    margin-right    : $Gap          ;
+    margin-left     : $Gap          ;
+}
+
+@mixin radius{
+    border-radius:1rem;
+}
+
+@mixin buttonCss{
+    .#{nameSpace}-button{
+        @include button;
+
+        &-radius{
+            @include radius;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+/**
+Aplicar cualquera de los mixins o clases a
+cualquier elemento que sea un flex container
+**/
+
+// Mixin para la creacion de un sistema de rejillas
+
+@mixin gridStrict($Column){
+    grid-template-columns   :repeat($Column , 1fr);
+}
+
+@mixin gridStrictCss($Breackpoint,$Column){
+    @include MediaQuery($Breackpoint){
+        .#{$nameSpace}-Grid-#{$Breackpoint}{
+            @if $Breackpoint == xs{
+                grid-template-columns:minmax(220px, 1fr);
+            }@else if $Breackpoint == s{
+                grid-template-columns:repeat(2,minmax(1fr,220px));
+            }@else if $Breackpoint == m{
+                grid-template-columns:repeat(4,minmax(1fr,220px));
+            }@else if $Breackpoint == st{
+                grid-template-columns:repeat(6,minmax(1fr,220px));
+            }@else if $Breackpoint == t{
+                grid-template-columns:repeat(8,minmax(1fr,220px));
+            }@else if $Breackpoint == l{
+                grid-template-columns:repeat(10,minmax(1fr,220px));
+            }@else if $Breackpoint == xl{
+                grid-template-columns:repeat(12,1fr);
+            }
+        }
+    }
+}
+
+// Mixin para la separacion de los items en la rejilla
+
+@mixin gap($Gap-Column,$Gap-Row){
+    grid-gap:$Gap-Column $Gap-Row;
+}
+
+
+@mixin gapCss($Gap-Column,$Gap-Row){
+    @include MediaQuery($Breackpoint){
+        .gap{
+            @if $Breackpoint == xs{
+                grid-gap:0;
+            }@else if $Breackpoint == s or $Breackpoint == m or $Breackpoint == st or $Breackpoint == t or $Breackpoint == l or $Breackpoint == xl {
+                grid-gap:$Gap-Column $Gap-Row;
+            }
+        }
+    }
+}

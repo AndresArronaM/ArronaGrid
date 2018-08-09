@@ -1,6 +1,6 @@
 {
-  "name": "arronagrid",
-  "version": "0.1.0",
+  "name": "@andresarronamontoya/arronagrid",
+  "version": "0.1.1",
   "description": "Libreria sass para la maquetacion de sitios web",
   "main": "arronagrid.scss",
   "style": "public/css/arronagrid.css",
@@ -35,5 +35,6 @@
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
-  }
+  },
+  "devDependencies": {}
 }

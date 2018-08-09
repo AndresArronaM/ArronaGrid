@@ -21,7 +21,7 @@ git clone https://github.com/AndresArronaM/ArronaGrid.git
 ### Desde NPM
 
 ```javascript
-npm install --save arronagrid
+npm install --save @andresarronamontoya/arronagrid
 ```
 
 ## Instalar

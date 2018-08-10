@@ -1,4 +1,24 @@
-/// Mixin para determinar el tipo de Layout.
+/// Mixin para determinar el modelo de Layout.
+/// @group   Layout
+/// @require {boolean} $Display
+/// @param   {boolean} $Display - Determina si un elemento sera un flex container o un grid container Acepta 2 valores [flex | grid]
+///
+/// @example scss
+///
+/// .container{
+///     @include Layout(flex);
+/// }
+///
+/// @example css
+///
+/// .container{
+///     display: -ms-flexbox;
+///     display: flex;
+///     -ms-flex-wrap: wrap;
+///     flex-wrap: wrap;
+/// }
+
+
 
 @mixin Layout($Display){
     @if $Display == flex{
@@ -18,8 +38,30 @@
 }
 
 /// Mixin para la creacion de un ag-container.
-/// Descripcion.
-/// Hace que un elemento se convierta en un flex o grid container.
+/// @group   Layout
+/// @require {boolean} $Display
+/// @param   {boolean} $Display - Determina si un elemento sera un flex container o un grid container Acepta 2 valores [flex | grid]
+///
+/// @example scss
+///
+/// .container{
+///     @include container(flex);
+/// }
+///
+/// @example css
+///
+/// .container{
+///     max-width: 1200px;
+///     margin-left: auto;
+///     margin-right: auto;
+///     width: 100%;
+///     display: -ms-flexbox;
+///     display: flex;
+///     -ms-flex-wrap: wrap;
+///     flex-wrap: wrap;
+/// }
+///
+
 
 @mixin container($Display){
     max-width       : $Max-Width;

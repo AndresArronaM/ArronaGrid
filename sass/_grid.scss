@@ -1,9 +1,20 @@
-/**
-Aplicar cualquera de los mixins o clases a
-cualquier elemento que sea un flex container
-**/
-
-// Mixin para la creacion de un sistema de rejillas
+/// Mixin para la creacion de un sistema de rejillas
+/// Se debe de aplicar al elemento que tenga el mixin Layout() o Container()
+/// @group   grid
+/// @require {number} $Column
+/// @param   {number} $Column[12] - Varible para determinar el numero de columnas
+/// @example scss
+///
+/// .container{
+///     @include gridStrict(12);
+/// }
+///
+/// @example css
+///
+/// .container{
+///     -ms-grid-columns: (1fr)[12];
+///     grid-template-columns: repeat(12, 1fr);
+/// }
 
 @mixin gridStrict($Column){
     grid-template-columns   :repeat($Column , 1fr);
@@ -31,16 +42,34 @@ cualquier elemento que sea un flex container
     }
 }
 
-// Mixin para la separacion de los items en la rejilla
+/// Mixin para la separacion de los items en la rejilla
+/// Se debe de aplicar al elemento que tenga el mixin Layout() o Container()
+/// @group   grid
+/// @require {number} $Gap-Column
+/// @param   {number} $Gap-Column[1rem] - Varible para determinar la separacion de las columnas
+/// @require {number} $Gap-Row
+/// @param   {number} $Gap-Row[1rem] - Varible para determinar la separacion de las filas
+/// @example scss
+///
+/// .container{
+///     @include gap($Gap-Column,$Gap-Row);
+/// }
+///
+/// @example css
+///
+/// .container{
+///     -ms-grid-columns: (1fr)[12];
+///     grid-template-columns: repeat(12, 1fr);
+/// }
 
 @mixin gap($Gap-Column,$Gap-Row){
     grid-gap:$Gap-Column $Gap-Row;
 }
 
 
-@mixin gapCss($Gap-Column,$Gap-Row){
+@mixin gapCss($Breackpoint,$Gap-Column,$Gap-Row){
     @include MediaQuery($Breackpoint){
-        .gap{
+        .#{$Breackpoint}-gap{
             @if $Breackpoint == xs{
                 grid-gap:0;
             }@else if $Breackpoint == s or $Breackpoint == m or $Breackpoint == st or $Breackpoint == t or $Breackpoint == l or $Breackpoint == xl {

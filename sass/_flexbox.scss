@@ -1,9 +1,5 @@
-/**
-    Aplicar cualquera de los mixins o clases a
-    cualquier elemento que sea un flex container
-**/
-
-// Mixin para determinar la direccion de los items
+/// Mapa de variables para el mixin direccion()
+/// @group   Flexbox
 
 $FlexDirection:(
     c   :   column,
@@ -11,6 +7,24 @@ $FlexDirection:(
     r   :   row,
     rr  :   row-reverse
 ) !default;
+
+/// Mixin para determinar la direccion de los items
+/// Se debe de aplicar al elemento que tenga el mixin Layout() o Container()
+/// @group   Flexbox
+/// @require {map} $Direccion
+/// @param   {map} $Direccion - Variable para optener un valor del mapa $FlexDirection
+/// @example scss
+///
+/// .container{
+///     @include direccion(c);
+/// }
+///
+/// @example css
+///
+/// .container{
+///    -ms-flex-direction: column;
+///    flex-direction: column;
+/// }
 
 @mixin direccion($Direccion){
     @if map-has-key($FlexDirection,$Direccion){
@@ -21,20 +35,39 @@ $FlexDirection:(
 @mixin direccionCss($Direccion,$Breackpoint){
     @if map-has-key($FlexDirection,$Direccion){
         @include MediaQuery($Breackpoint){
-            .#{$Breackpoint}-flex-#{Direccion}{
+            .#{$Breackpoint}-flex-#{$Direccion}{
                 flex-direction:#{map-get($FlexDirection,$Direccion)};
             }
         }
     }
 }
 
-// Mixin para determinar si los items estaran en una linea o no
+/// Mapa de variables para el mixin wrap()
+/// @group   Flexbox
 
 $FlexWrap:(
     w   :wrap,
     wr  :wrap-reverse,
     nw  :nowrap
 ) !default;
+
+/// Mixin para determinar si los items estaran en una linea o no
+/// Se debe de aplicar al elemento que tenga el mixin Layout() o Container()
+/// @group   Flexbox
+/// @require {map} $Wrap
+/// @param   {map} $Wrap - Variable para optener un valor del mapa $FlexWrap
+/// @example scss
+///
+/// .container{
+///     @include wrap(w);
+/// }
+///
+/// @example css
+///
+/// .container{
+///     -ms-flex-wrap:wrap-reverse;
+///     flex-wrap:wrap-reverse
+/// }
 
 @mixin wrap($Wrap){
     @if map-has-key($FlexWrap,$Wrap){
@@ -44,7 +77,7 @@ $FlexWrap:(
 
 @mixin wrapCss($Wrap,$Breackpoint){
     @if map-has-key($FlexWrap,$Wrap){
-        @include MediaQuery($Breackpoints){
+        @include MediaQuery($Breackpoint){
             .#{$Breackpoint}-flex-#{$Wrap}{
                 flex-wrap:#{map-get($FlexWrap,$Wrap)};
             }
@@ -52,7 +85,8 @@ $FlexWrap:(
     }
 }
 
-// Mixin para la alineacion de los items en el main axis o cross axis
+/// Mapa de variables para el mixin Align()
+/// @group   Flexbox
 
 $FlexAlign :(
     Justify     :space-between,
@@ -62,11 +96,33 @@ $FlexAlign :(
     End         :flex-end
 )!default;
 
+/// Mapa de variables para el mixin Align()
+/// @group   Flexbox
+
 $FlexAxis :(
-    cross   :cross,
-    main    :main,
-    axis    :flex
+    cross   :cross,  //Si los items se alinearan al eje cross
+    main    :main,   //Si los items se alinearan al eje main
+    axis    :flex    //Si los items se alinearan en los 2 ejes
 )!default;
+
+/// Mixin para la alineacion de los items en el main axis o cross axis
+/// Se debe de aplicar al elemento que tenga el mixin Layout() o Container()
+/// @group   Flexbox
+/// @require {map} $Wrap
+/// @param   {map} $Axis  - Variable para optener un valor del mapa $FlexAxis
+/// @param   {map} $Align - Variable para optener un valor del mapa $FlexAlign
+/// @example scss
+///
+/// .container{
+///     @include Align(cross,Justify);
+/// }
+///
+/// @example css
+///
+/// .container{
+///   -ms-flex-pack: justify;
+///   justify-content: space-between;
+/// }
 
 @mixin Align($Axis,$Align){
     @if map-has-key($FlexAxis,$Axis){

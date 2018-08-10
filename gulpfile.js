@@ -12,7 +12,7 @@ var processors =[
   })
 ]
 
-gulp.task('styles', ()=>{
+gulp.task('styles',()=>{
 
   gulp.src('./ArronaGrid.scss')
     .pipe(sass())
@@ -23,5 +23,5 @@ gulp.task('styles', ()=>{
 });
 
 gulp.task('default', ()=>{
-  gulp.watch('**/*.scss', ['styles']);
+  gulp.watch('./**/*.scss', ['styles']);
 });

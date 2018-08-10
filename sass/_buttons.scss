@@ -1,8 +1,27 @@
 /// Mixin para la creacion de un ag-button.
-/// Descripcion.
-/// Da los estilos basicos para un boton.
+/// @group Bottons
+/// @require {number} $Gap
+/// @param   {number} $Gap[1rem] - Separacion entre elementos
+///
+/// @example scss
+///
+/// .button{
+///     @include button($Gap);
+/// }
+///
+/// @example css
+///
+/// .button{
+///    display         : inline-block  ;
+///    padding         : .8em 1.4em    ;
+///    cursor          : pointer       ;
+///    border          : none          ;
+///    text-decoration : none          ;
+///    margin-right    : 1rem          ;
+///    margin-left     : 1rem          ;
+/// }
 
-@mixin button {
+@mixin button($Gap) {
     display         : inline-block  ;
     padding         : .8em 1.4em    ;
     cursor          : pointer       ;
@@ -12,13 +31,36 @@
     margin-left     : $Gap          ;
 }
 
+/// Mixin para redondear los bordes de un ag-button.
+/// @group Bottons
+///
+/// @example scss
+///
+/// .button{
+///     @include button($Gap);
+///     @include radius;
+/// }
+///
+/// @example css
+///
+/// .button{
+///    display         : inline-block  ;
+///    padding         : .8em 1.4em    ;
+///    cursor          : pointer       ;
+///    border          : none          ;
+///    text-decoration : none          ;
+///    margin-right    : 1rem          ;
+///    margin-left     : 1rem          ;
+///    border-radius   : 1rem          ;
+/// }
+
 @mixin radius{
     border-radius:1rem;
 }
 
-@mixin buttonCss{
-    .#{nameSpace}-button{
-        @include button;
+@mixin buttonCss($Gap){
+    .#{$nameSpace}-button{
+        @include button($Gap);
 
         &-radius{
             @include radius;

@@ -5,7 +5,7 @@
     @include containerCss(grid);
     @include fullCss;
     @include fullLayoutCss;
-    @include buttonCss;
+    @include buttonCss($Gap);
     @include direccionCss(c,xs);
     @include direccionCss(cr,xs);
     @include direccionCss(r,xs);
@@ -125,4 +125,11 @@
     @include gridStrictCss(t, $Column);
     @include gridStrictCss(l, $Column);
     @include gridStrictCss(xl,$Column);
+    @include gapCss(xs,$Gap,$Gap);
+    @include gapCss(s, $Gap,$Gap);
+    @include gapCss(m, $Gap,$Gap);
+    @include gapCss(st,$Gap,$Gap);
+    @include gapCss(t, $Gap,$Gap);
+    @include gapCss(l, $Gap,$Gap);
+    @include gapCss(xl,$Gap,$Gap);
 }

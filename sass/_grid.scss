@@ -26,15 +26,15 @@
             @if $Breackpoint == xs{
                 grid-template-columns:minmax(220px, 1fr);
             }@else if $Breackpoint == s{
-                grid-template-columns:repeat(2,minmax(1fr,220px));
+                grid-template-columns:repeat(2,1fr);
             }@else if $Breackpoint == m{
-                grid-template-columns:repeat(4,minmax(1fr,220px));
+                grid-template-columns:repeat(4,1fr);
             }@else if $Breackpoint == st{
-                grid-template-columns:repeat(6,minmax(1fr,220px));
+                grid-template-columns:repeat(6,1fr);
             }@else if $Breackpoint == t{
-                grid-template-columns:repeat(8,minmax(1fr,220px));
+                grid-template-columns:repeat(8,1fr)
             }@else if $Breackpoint == l{
-                grid-template-columns:repeat(10,minmax(1fr,220px));
+                grid-template-columns:repeat(10,1fr);
             }@else if $Breackpoint == xl{
                 grid-template-columns:repeat(12,1fr);
             }

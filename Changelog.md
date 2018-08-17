@@ -13,3 +13,8 @@
 
 * Se cambio la propiedad `overflow` a `overflow-y`.
 * Se corrigio y se mejoro el mixin `gridStrictCss()`.
+
+## V0.1.4-Beta
+
+* Correciones menores
+* Se actualizo Autoprefixer

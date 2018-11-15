@@ -1,6 +1,6 @@
 {
   "name": "@andresarronamontoya/arronagrid",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Libreria sass para la maquetacion de sitios web",
   "main": "arronagrid.scss",
   "style": "public/css/arronagrid.css",

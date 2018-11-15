@@ -1,11 +1,11 @@
-@mixin fullLayoutCss{
-    .Full-Layout{
+@mixin ag-Full-Layout-css{
+    .ag-Full-Layout{
         max-width:$FullLayout;
     }
 }
 
-@mixin fullCss{
-    .Full{
+@mixin ag-Full-css{
+    .ag-Full{
         max-width:$Full;
     }
 }

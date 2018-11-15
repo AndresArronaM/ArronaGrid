@@ -16,27 +16,27 @@
 ///     grid-template-columns: repeat(12, 1fr);
 /// }
 
-@mixin gridStrict($Column){
+@mixin ag-Grid($Column){
     grid-template-columns   :repeat($Column , 1fr);
 }
 
-@mixin gridStrictCss($Breackpoint,$Column){
+@mixin ag-Grid-css($Breackpoint,$Column){
     @include MediaQuery($Breackpoint){
         .#{$nameSpace}-Grid-#{$Breackpoint}{
             @if $Breackpoint == xs{
                 grid-template-columns:minmax(220px, 1fr);
             }@else if $Breackpoint == s{
-                grid-template-columns:repeat(2,1fr);
+                grid-template-columns:repeat($Column / 6,1fr);
             }@else if $Breackpoint == m{
-                grid-template-columns:repeat(4,1fr);
+                grid-template-columns:repeat($Column / 3,1fr);
             }@else if $Breackpoint == st{
-                grid-template-columns:repeat(6,1fr);
+                grid-template-columns:repeat($Column / 2,1fr);
             }@else if $Breackpoint == t{
-                grid-template-columns:repeat(8,1fr)
+                grid-template-columns:repeat($Column - 4,1fr)
             }@else if $Breackpoint == l{
-                grid-template-columns:repeat(10,1fr);
+                grid-template-columns:repeat($Column - 2,1fr);
             }@else if $Breackpoint == xl{
-                grid-template-columns:repeat(12,1fr);
+                grid-template-columns:repeat($Column,1fr);
             }
         }
     }
@@ -62,14 +62,14 @@
 ///     grid-template-columns: repeat(12, 1fr);
 /// }
 
-@mixin gap($Gap-Column,$Gap-Row){
+@mixin ag-Gap($Gap-Column,$Gap-Row){
     grid-gap:$Gap-Column $Gap-Row;
 }
 
 
-@mixin gapCss($Breackpoint,$Gap-Column,$Gap-Row){
+@mixin ag-Gap-css($Breackpoint,$Gap-Column,$Gap-Row){
     @include MediaQuery($Breackpoint){
-        .#{$Breackpoint}-gap{
+        .#{$nameSpace}-Gap-#{$Breackpoint}{
             @if $Breackpoint == xs{
                 grid-gap:0;
             }@else if $Breackpoint == s or $Breackpoint == m or $Breackpoint == st or $Breackpoint == t or $Breackpoint == l or $Breackpoint == xl {

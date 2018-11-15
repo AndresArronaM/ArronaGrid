@@ -21,7 +21,7 @@
 ///    margin-left     : 1rem          ;
 /// }
 
-@mixin button($Gap) {
+@mixin ag-Button($Gap) {
     display         : inline-block  ;
     padding         : .8em 1.4em    ;
     cursor          : pointer       ;
@@ -54,16 +54,16 @@
 ///    border-radius   : 1rem          ;
 /// }
 
-@mixin radius{
+@mixin ag-Radius{
     border-radius:1rem;
 }
 
-@mixin buttonCss($Gap){
-    .#{$nameSpace}-button{
-        @include button($Gap);
+@mixin ag-Button-css($Gap){
+    .#{$nameSpace}-Button{
+        @include ag-Button($Gap);
 
-        &-radius{
-            @include radius;
+        &-Radius{
+            @include ag-Radius;
         }
     }
 }

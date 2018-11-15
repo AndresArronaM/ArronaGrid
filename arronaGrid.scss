@@ -5,7 +5,7 @@
 /// Acepta 2 valores sass(por defecto y recomendado) y css.
 /// @group Variables Globales
 
-$Core   :scss !default;
+$Core   :css !default;
 
 /// Soporte para caracteristicas css.
 /// Acepta 3 valores all(por defecto), grid, beta.
@@ -18,8 +18,8 @@ $Version :all !default;
 /// @group Variables Globales
 
 $nameSpace  : ag                       !default;
-$Container  : #{$nameSpace}-container  !default;
-$Item       : #{$nameSpace}-item       !default;
+$Container  : #{$nameSpace}-Container  !default;
+$Item       : #{$nameSpace}-Item       !default;
 
 /// Ancho maximo para los contenedores
 /// @group   Layout

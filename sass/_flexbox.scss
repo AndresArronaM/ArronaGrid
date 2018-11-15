@@ -26,16 +26,18 @@ $FlexDirection:(
 ///    flex-direction: column;
 /// }
 
-@mixin direccion($Direccion){
+@mixin ag-Direccion($Direccion){
     @if map-has-key($FlexDirection,$Direccion){
         flex-direction:#{map-get($FlexDirection,$Direccion)};
+    }@else{
+        @error "Valor no aceptado por la variable `$Direccion` en el mixin `ag-Direccion()`";
     }
 }
 
-@mixin direccionCss($Direccion,$Breackpoint){
+@mixin ag-Direccion-css($Direccion,$Breackpoint){
     @if map-has-key($FlexDirection,$Direccion){
         @include MediaQuery($Breackpoint){
-            .#{$Breackpoint}-flex-#{$Direccion}{
+            .#{$nameSpace}-Flex-#{$Direccion}-#{$Breackpoint}{
                 flex-direction:#{map-get($FlexDirection,$Direccion)};
             }
         }
@@ -69,16 +71,18 @@ $FlexWrap:(
 ///     flex-wrap:wrap-reverse
 /// }
 
-@mixin wrap($Wrap){
+@mixin ag-Wrap($Wrap){
     @if map-has-key($FlexWrap,$Wrap){
         flex-wrap:#{map-get($FlexWrap,$Wrap)};
+    }@else{
+        @error "Valor no aceptado por la variable `$Wrap en el mixin `ag-Wrap()`";
     }
 }
 
-@mixin wrapCss($Wrap,$Breackpoint){
+@mixin ag-Wrap-css($Wrap,$Breackpoint){
     @if map-has-key($FlexWrap,$Wrap){
         @include MediaQuery($Breackpoint){
-            .#{$Breackpoint}-flex-#{$Wrap}{
+            .#{$nameSpace}-Flex-#{$Wrap}-#{$Breackpoint}{
                 flex-wrap:#{map-get($FlexWrap,$Wrap)};
             }
         }
@@ -124,11 +128,13 @@ $FlexAxis :(
 ///   justify-content: space-between;
 /// }
 
-@mixin Align($Axis,$Align){
+@mixin ag-Align($Axis,$Align){
     @if map-has-key($FlexAxis,$Axis){
         @if $Axis == main{
             @if map-has-key($FlexAlign,$Align){
                 justify-content:#{map-get($FlexAlign,$Align)};
+            }@else{
+                @error "Valor no aceptado por la variable `$Align` en el mixin `ag-Align()`";
             }
         }@else if $Axis == cross{
             @if map-has-key($FlexAlign,$Align){
@@ -136,21 +142,32 @@ $FlexAxis :(
                     align-items:#{map-get($FlexAlign,$Align)};
                     align-content:#{map-get($FlexAlign,$Align)};
                 }@else{
-                    @warn "Error valor no permitido";
+                    @error "Valores no aceptados por las propiedades `align-items` y `align-content` en el mixin `ag-Align()`";
                 }
             }
         }@else if $Axis == axis{
-            @warn "Valor no valido para la version sass";
+            @if map-has-key($FlexAlign,$Align){
+                @if $Align == Center{
+                    justify-content:#{map-get($FlexAlign,$Align)};
+                    align-items:#{map-get($FlexAlign,$Align)};
+                    align-content:#{map-get($FlexAlign,$Align)};
+                    text-align:center;
+                }@else{
+                    @error "Valores no aceptados por la variable `$Align` cuando el valor de la variable `$Axis` es axis en el mixin `ag-Align()`";
+                }
+            }
+        }@else{
+            @error "Valor no aceptado por la variable `$Axis` en el mixin `ag-Align()`";
         }
     }
 }
 
-@mixin AlignCss($Axis,$Align,$Breackpoint){
+@mixin ag-Align-css($Axis,$Align,$Breackpoint){
     @if map-has-key($FlexAxis,$Axis){
         @if $Axis == main{
             @if map-has-key($FlexAlign,$Align){
                 @include MediaQuery($Breackpoint){
-                    .#{$Breackpoint}-#{$Axis}-#{$Align}{
+                    .#{$nameSpace}-#{$Axis}-#{$Align}-#{$Breackpoint}{
                         justify-content:#{map-get($FlexAlign,$Align)};
                     }
                 }
@@ -159,12 +176,10 @@ $FlexAxis :(
             @if map-has-key($FlexAxis,$Axis){
                 @include MediaQuery($Breackpoint){
                     @if $Align == Start or $Align == Center or $Align == End{
-                        .#{$Breackpoint}-#{$Axis}-#{$Align}{
+                        .#{$nameSpace}-#{$Axis}-#{$Align}-#{$Breackpoint}{
                             align-items:#{map-get($FlexAlign,$Align)};
                             align-content:#{map-get($FlexAlign,$Align)};
                         }
-                    }@else{
-                        @warn "Error valor no permitido";
                     }
                 }
             }
@@ -172,14 +187,12 @@ $FlexAxis :(
             @if map-has-key($FlexAlign,$Align){
                 @include MediaQuery($Breackpoint){
                     @if $Align == Center{
-                        .#{$Breackpoint}-#{$Axis}-#{$Align}{
+                        .#{$nameSpace}-#{$Axis}-#{$Align}-#{$Breackpoint}{
                             justify-content:#{map-get($FlexAlign,$Align)};
                             align-items:#{map-get($FlexAlign,$Align)};
                             align-content:#{map-get($FlexAlign,$Align)};
                             text-align:center;
                         }
-                    }@else{
-                        @warn "Error valor no permitido";
                     }
                 }
             }

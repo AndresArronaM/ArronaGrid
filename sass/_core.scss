@@ -20,20 +20,20 @@
 
 
 
-@mixin Layout($Display){
-    @if $Display == flex{
+@mixin ag-Layout($Display){
+    @if $Display == Flex{
         display     : flex;
-        @include wrap(w);
-    }@else if $Display == grid{
+        @include ag-Wrap(w);
+    }@else if $Display == Grid{
         display     : grid;
     }@else{
         @warn "Error valor no permitido";
     }
 }
 
-@mixin LayoutCss($Display){
-    .#{$nameSpace}-layout-#{$Display}{
-        @include Layout($Display);
+@mixin ag-Layout-css($Display){
+    .#{$nameSpace}-Layout-#{$Display}{
+        @include ag-Layout($Display);
     }
 }
 
@@ -63,17 +63,17 @@
 ///
 
 
-@mixin container($Display){
+@mixin ag-Container($Display){
     max-width       : $Max-Width;
     margin-left     : auto      ;
     margin-right    : auto      ;
     width           : 100%      ;
-    @include Layout($Display)   ;
+    @include ag-Layout($Display)   ;
 }
 
-@mixin containerCss($Display){
+@mixin ag-Container-css($Display){
     .#{$Container}-#{$Display}{
-        @include container($Display);
+        @include ag-Container($Display);
     }
 }
 

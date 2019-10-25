@@ -1,0 +1,17 @@
+@mixin ag-Visibility($Visibility){
+    @if $Visibility == "contents" or $Visibility == "none" {
+        display:$Visibility;
+    }@else if $Visibility == "hidden" or $Visibility == "visible"{
+        visibility:$Visibility;
+    }@else{
+        @warn "Error #{$Visibility}";
+    }
+}
+
+@mixin ag-Visibility-css($Visibility, $NameSpace, $Breackpoint){
+    @include MediaQuery($Breackpoint){
+        .#{$NameSpace}-Visibility-#{$Visibility}-#{$Breackpoint}{
+            @include ag-Visibility($Visibility);
+        }
+    }
+}

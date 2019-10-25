@@ -1,0 +1,21 @@
+@mixin ag-SystemColumn($Column){
+    @if $Column == 2 or $Column == 3 or $Column == 4 or $Column == 5 or $Column == 6 or $Column == 8 or $Column == 10 or $Column == 12 or $Column == 16 or $Column == 20{
+        width: 100% / $Column;
+    }@else{
+        @warn "Error";
+    }
+}
+
+@mixin ag-SystemColumn-css($Column,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @for $i from 1 through $Column{
+            .#{$NameSpace}-Col-#{$i}-#{$Breackpoint}{
+                @if $Column == 2 or $Column == 3 or $Column == 4 or $Column == 5 or $Column == 6 or $Column == 8 or $Column == 10 or $Column == 12 or $Column == 16 or $Column == 20{
+                    width: (100% / $Column) * $i;
+                }@else{
+                    @warn "Error";
+                }
+            }
+        }
+    }
+}

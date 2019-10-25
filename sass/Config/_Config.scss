@@ -1,0 +1,35 @@
+//Selecciona el Core para trabajaer
+$Core           :css                        !default;
+
+//Selecciona la version de la libreria
+$Version        :Beta                       !default;
+
+//Soporte
+$Suport         :Chrome                     !default;
+
+//Selecciona el modelo de layout a usar
+$Layout         :All                        !default;
+
+//El numero maximo de columnas a usar
+$Column         :20                         !default;
+
+//El prefijo de la libreria
+$NameSpace      :ag                         !default;
+
+//El maximo tamaño de un elemento
+$Max-Width      :1200px                     !default;
+
+//Separacion entre elementos
+$Gap            :1rem;
+
+//Tamaño completo de un contenedor
+$Full           :100Vh;
+
+//BreackPoints
+$Breackpoints   :(
+    S:240px,
+    T:480px,
+    TL:600px,
+    L:1024px,
+    XL:1440px
+) !default;

@@ -1,0 +1,87 @@
+@mixin ag-autogrid($Gap){
+    grid-template-columns:repeat(auto-fill, minmax(16rem, 1fr));
+    grid-gap:$Gap;
+}
+
+@mixin ag-autogrid-css($NameSpace,$Gap){
+    .#{$NameSpace}-autogrid{
+        @include ag-autogrid($Gap);
+    }
+}
+
+@mixin ag-grid($Column,$Gap){
+    grid-template-columns:repeat($Column, 1fr);
+    grid-gap:$Gap;
+}
+
+@mixin ag-grid-css($NameSpace,$Column,$Gap){
+    .#{$NameSpace}-grid{
+        @include ag-grid($Column,$Gap);
+    }
+}
+
+@mixin ag-gridRow($Column,$Gap){
+    grid-template-rows:repeat($Column, 1fr);
+}
+
+@mixin ag-gridRow-css($NameSpace,$Column,$Gap){
+    .#{$NameSpace}-gridRow{
+        @include ag-gridRow($Column,$Gap);
+    }
+}
+
+@mixin ag-grid-columns($ColumnStart){
+    grid-column-start: $ColumnStart;
+}
+
+@mixin ag-grid-columns-css($Column,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @for $i from 1 through $Column{
+            .#{$NameSpace}-Col-G-#{$i}-#{$Breackpoint}{
+                @include ag-grid-columns($i);
+            }
+        }
+    }
+}
+
+@mixin ag-grid-columns-span($ColumnStart){
+    grid-column-end:span $ColumnStart;
+}
+
+@mixin ag-grid-columns-span-css($Column,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @for $i from 1 through $Column{
+            .#{$NameSpace}-Col-Span-#{$i}-#{$Breackpoint}{
+                @include ag-grid-columns-span($i);
+            }
+        }
+    }
+}
+
+@mixin ag-grid-rows($RowStart){
+    grid-row-start: $RowStart;
+}
+
+@mixin ag-grid-rows-css($Column,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @for $i from 1 through $Column{
+            .#{$NameSpace}-Row-#{$i}-#{$Breackpoint}{
+                @include ag-grid-rows($i);
+            }
+        }
+    }
+}
+
+@mixin ag-grid-rows-span($ColumnStart){
+    grid-column-end:span $ColumnStart;
+}
+
+@mixin ag-grid-rows-span-css($Column,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @for $i from 1 through $Column{
+            .#{$NameSpace}-Row-Span-#{$i}-#{$Breackpoint}{
+                @include ag-grid-rows-span($i);
+            }
+        }
+    }
+}

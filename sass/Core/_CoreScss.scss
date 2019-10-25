@@ -1,0 +1,38 @@
+@mixin ag-Display($Display){
+    @if $Display == Flex or $Display == Grid or $Display == Block{
+        display:$Display;
+    }
+}
+
+@mixin ag-Display-css($Display,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        .#{$NameSpace}-D-#{$Display}-#{$Breackpoint}{
+            @include ag-Display($Display);
+        }
+    }
+}
+
+@mixin ag-Content(){
+    margin-left:auto;
+    margin-right:auto;
+    max-width:1200px;
+    width:100%;
+}
+
+@mixin ag-Item(){
+    margin          :0;
+    padding-left    :$Gap /2;
+    padding-right   :$Gap /2;
+}
+
+@mixin ag-Content-css(){
+    .#{$NameSpace}-#{Container}{
+        @include ag-Content();
+    }
+}
+
+@mixin ag-Item-css(){
+    .#{$NameSpace}-#{Item}{
+        @include ag-Item();
+    }
+}

@@ -1,0 +1,19 @@
+@mixin ag-Full($Full){
+    max-width:$Full;
+}
+
+@mixin ag-Full-css($Full,$NameSpace,$Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @if $Full == 100%{
+            .#{$NameSpace}-Full-P-#{$Breackpoint}{
+                @include ag-Full($Full);
+            }
+        }@else if $Full == 100vh{
+            .#{$NameSpace}-Full-VH-#{$Breackpoint}{
+                @include ag-Full($Full);
+            }
+        }@else{
+            @warn "Error";
+        }
+    }
+}

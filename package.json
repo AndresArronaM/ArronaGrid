@@ -1,12 +1,15 @@
 {
   "name": "@andresarronamontoya/arronagrid",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Libreria sass para la maquetacion de sitios web",
-  "main": "arronagrid.scss",
+  "main": "gulpfile.js",
   "style": "public/css/arronagrid.css",
   "sass": "arronagrid.scss",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "dev": "gulp Dev",
+    "build": "gulp Build",
+    "server": "gulp Server"
   },
   "keywords": [
     "css",
@@ -28,13 +31,18 @@
   },
   "homepage": "https://github.com/AndresArronaM/ArronaGrid#readme",
   "dependencies": {
-    "autoprefixer": "^9.1.1",
+    "autoprefixer": "^9.5.1",
     "autoprefixer-core": "^6.0.1",
-    "cssnano": "^4.0.5",
-    "gulp": "^3.9.1",
+    "browser-sync": "^2.26.5",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-watch": "^5.0.1",
+    "node-sass-tilde-importer": "^1.0.2"
   },
   "devDependencies": {}
 }

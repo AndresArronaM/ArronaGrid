@@ -1,2 +1,4324 @@
-*,:after,:before{-moz-box-sizing:border-box;box-sizing:border-box;margin:0;overflow-y:auto;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;text-size-adjust:100%}img{height:auto;min-width:100%}a{text-decoration:none}a:hover{text-decoration:underline}.ag-Layout-Flex{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.ag-Layout-Grid{display:-ms-grid;display:grid}.ag-Container-Flex{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.ag-Container-Flex,.ag-Container-Grid{margin-left:auto;margin-right:auto;max-width:1200px;width:100%}.ag-Container-Grid{display:-ms-grid;display:grid}.ag-Full{max-width:100%}.ag-Full-Layout{max-width:100vh}.ag-Button{border:none;cursor:pointer;display:inline-block;margin-left:1rem;margin-right:1rem;padding:.8em 1.4em;text-decoration:none}.ag-Button-Radius{border-radius:1rem}.ag-Flex-c-xs{-ms-flex-direction:column;flex-direction:column}.ag-Flex-cr-xs{-ms-flex-direction:column-reverse;flex-direction:column-reverse}.ag-Flex-r-xs{-ms-flex-direction:row;flex-direction:row}.ag-Flex-rr-xs{-ms-flex-direction:row-reverse;flex-direction:row-reverse}@media screen and (min-width:320px){.ag-Flex-c-s{-ms-flex-direction:column;flex-direction:column}}@media screen and (min-width:320px){.ag-Flex-cr-s{-ms-flex-direction:column-reverse;flex-direction:column-reverse}}@media screen and (min-width:320px){.ag-Flex-r-s{-ms-flex-direction:row;flex-direction:row}}@media screen and (min-width:320px){.ag-Flex-rr-s{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media screen and (min-width:480px){.ag-Flex-c-m{-ms-flex-direction:column;flex-direction:column}}@media screen and (min-width:480px){.ag-Flex-cr-m{-ms-flex-direction:column-reverse;flex-direction:column-reverse}}@media screen and (min-width:480px){.ag-Flex-r-m{-ms-flex-direction:row;flex-direction:row}}@media screen and (min-width:480px){.ag-Flex-rr-m{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media screen and (min-width:600px){.ag-Flex-c-st{-ms-flex-direction:column;flex-direction:column}}@media screen and (min-width:600px){.ag-Flex-cr-st{-ms-flex-direction:column-reverse;flex-direction:column-reverse}}@media screen and (min-width:600px){.ag-Flex-r-st{-ms-flex-direction:row;flex-direction:row}}@media screen and (min-width:600px){.ag-Flex-rr-st{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media screen and (min-width:768px){.ag-Flex-c-t{-ms-flex-direction:column;flex-direction:column}}@media screen and (min-width:768px){.ag-Flex-cr-t{-ms-flex-direction:column-reverse;flex-direction:column-reverse}}@media screen and (min-width:768px){.ag-Flex-r-t{-ms-flex-direction:row;flex-direction:row}}@media screen and (min-width:768px){.ag-Flex-rr-t{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media screen and (min-width:1024px){.ag-Flex-c-l{-ms-flex-direction:column;flex-direction:column}}@media screen and (min-width:1024px){.ag-Flex-cr-l{-ms-flex-direction:column-reverse;flex-direction:column-reverse}}@media screen and (min-width:1024px){.ag-Flex-r-l{-ms-flex-direction:row;flex-direction:row}}@media screen and (min-width:1024px){.ag-Flex-rr-l{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}@media screen and (min-width:1200px){.ag-Flex-c-xl{-ms-flex-direction:column;flex-direction:column}}@media screen and (min-width:1200px){.ag-Flex-cr-xl{-ms-flex-direction:column-reverse;flex-direction:column-reverse}}@media screen and (min-width:1200px){.ag-Flex-r-xl{-ms-flex-direction:row;flex-direction:row}}@media screen and (min-width:1200px){.ag-Flex-rr-xl{-ms-flex-direction:row-reverse;flex-direction:row-reverse}}.ag-Flex-w-xs{-ms-flex-wrap:wrap;flex-wrap:wrap}.ag-Flex-wr-xs{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}.ag-Flex-nw-xs{-ms-flex-wrap:nowrap;flex-wrap:nowrap}@media screen and (min-width:320px){.ag-Flex-w-s{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (min-width:320px){.ag-Flex-wr-s{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media screen and (min-width:320px){.ag-Flex-nw-s{-ms-flex-wrap:nowrap;flex-wrap:nowrap}}@media screen and (min-width:480px){.ag-Flex-w-m{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (min-width:480px){.ag-Flex-wr-m{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media screen and (min-width:480px){.ag-Flex-nw-m{-ms-flex-wrap:nowrap;flex-wrap:nowrap}}@media screen and (min-width:600px){.ag-Flex-w-st{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (min-width:600px){.ag-Flex-wr-st{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media screen and (min-width:600px){.ag-Flex-nw-st{-ms-flex-wrap:nowrap;flex-wrap:nowrap}}@media screen and (min-width:768px){.ag-Flex-w-t{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (min-width:768px){.ag-Flex-wr-t{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media screen and (min-width:768px){.ag-Flex-nw-t{-ms-flex-wrap:nowrap;flex-wrap:nowrap}}@media screen and (min-width:1024px){.ag-Flex-w-l{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (min-width:1024px){.ag-Flex-wr-l{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media screen and (min-width:1024px){.ag-Flex-nw-l{-ms-flex-wrap:nowrap;flex-wrap:nowrap}}@media screen and (min-width:1200px){.ag-Flex-w-xl{-ms-flex-wrap:wrap;flex-wrap:wrap}}@media screen and (min-width:1200px){.ag-Flex-wr-xl{-ms-flex-wrap:wrap-reverse;flex-wrap:wrap-reverse}}@media screen and (min-width:1200px){.ag-Flex-nw-xl{-ms-flex-wrap:nowrap;flex-wrap:nowrap}}.ag-main-Justify-xs{-ms-flex-pack:justify;justify-content:space-between}.ag-main-Distribute-xs{-ms-flex-pack:distribute;justify-content:space-around}.ag-main-Start-xs{-ms-flex-pack:start;justify-content:flex-start}.ag-main-Center-xs{-ms-flex-pack:center;justify-content:center}.ag-main-End-xs{-ms-flex-pack:end;justify-content:flex-end}.ag-cross-Start-xs{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}.ag-cross-Center-xs{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}.ag-cross-End-xs{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}.ag-axis-Center-xs{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}@media screen and (min-width:320px){.ag-main-Justify-s{-ms-flex-pack:justify;justify-content:space-between}}@media screen and (min-width:320px){.ag-main-Distribute-s{-ms-flex-pack:distribute;justify-content:space-around}}@media screen and (min-width:320px){.ag-main-Start-s{-ms-flex-pack:start;justify-content:flex-start}}@media screen and (min-width:320px){.ag-main-Center-s{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:320px){.ag-main-End-s{-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width:320px){.ag-cross-Start-s{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}}@media screen and (min-width:320px){.ag-cross-Center-s{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}}@media screen and (min-width:320px){.ag-cross-End-s{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}}@media screen and (min-width:320px){.ag-axis-Center-s{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}}@media screen and (min-width:480px){.ag-main-Justify-m{-ms-flex-pack:justify;justify-content:space-between}}@media screen and (min-width:480px){.ag-main-Distribute-m{-ms-flex-pack:distribute;justify-content:space-around}}@media screen and (min-width:480px){.ag-main-Start-m{-ms-flex-pack:start;justify-content:flex-start}}@media screen and (min-width:480px){.ag-main-Center-m{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:480px){.ag-main-End-m{-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width:480px){.ag-cross-Start-m{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}}@media screen and (min-width:480px){.ag-cross-Center-m{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}}@media screen and (min-width:480px){.ag-cross-End-m{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}}@media screen and (min-width:480px){.ag-axis-Center-m{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}}@media screen and (min-width:600px){.ag-main-Justify-st{-ms-flex-pack:justify;justify-content:space-between}}@media screen and (min-width:600px){.ag-main-Distribute-st{-ms-flex-pack:distribute;justify-content:space-around}}@media screen and (min-width:600px){.ag-main-Start-st{-ms-flex-pack:start;justify-content:flex-start}}@media screen and (min-width:600px){.ag-main-Center-st{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:600px){.ag-main-End-st{-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width:600px){.ag-cross-Start-st{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}}@media screen and (min-width:600px){.ag-cross-Center-st{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}}@media screen and (min-width:600px){.ag-cross-End-st{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}}@media screen and (min-width:600px){.ag-axis-Center-st{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}}@media screen and (min-width:768px){.ag-main-Justify-t{-ms-flex-pack:justify;justify-content:space-between}}@media screen and (min-width:768px){.ag-main-Distribute-t{-ms-flex-pack:distribute;justify-content:space-around}}@media screen and (min-width:768px){.ag-main-Start-t{-ms-flex-pack:start;justify-content:flex-start}}@media screen and (min-width:768px){.ag-main-Center-t{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:768px){.ag-main-End-t{-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width:768px){.ag-cross-Start-t{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}}@media screen and (min-width:768px){.ag-cross-Center-t{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}}@media screen and (min-width:768px){.ag-cross-End-t{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}}@media screen and (min-width:768px){.ag-axis-Center-t{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}}@media screen and (min-width:1024px){.ag-main-Justify-l{-ms-flex-pack:justify;justify-content:space-between}}@media screen and (min-width:1024px){.ag-main-Distribute-l{-ms-flex-pack:distribute;justify-content:space-around}}@media screen and (min-width:1024px){.ag-main-Start-l{-ms-flex-pack:start;justify-content:flex-start}}@media screen and (min-width:1024px){.ag-main-Center-l{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:1024px){.ag-main-End-l{-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width:1024px){.ag-cross-Start-l{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}}@media screen and (min-width:1024px){.ag-cross-Center-l{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}}@media screen and (min-width:1024px){.ag-cross-End-l{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}}@media screen and (min-width:1024px){.ag-axis-Center-l{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}}@media screen and (min-width:1200px){.ag-main-Justify-xl{-ms-flex-pack:justify;justify-content:space-between}}@media screen and (min-width:1200px){.ag-main-Distribute-xl{-ms-flex-pack:distribute;justify-content:space-around}}@media screen and (min-width:1200px){.ag-main-Start-xl{-ms-flex-pack:start;justify-content:flex-start}}@media screen and (min-width:1200px){.ag-main-Center-xl{-ms-flex-pack:center;justify-content:center}}@media screen and (min-width:1200px){.ag-main-End-xl{-ms-flex-pack:end;justify-content:flex-end}}@media screen and (min-width:1200px){.ag-cross-Start-xl{-ms-flex-line-pack:start;align-content:flex-start;-ms-flex-align:start;align-items:flex-start}}@media screen and (min-width:1200px){.ag-cross-Center-xl{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center}}@media screen and (min-width:1200px){.ag-cross-End-xl{-ms-flex-line-pack:end;align-content:flex-end;-ms-flex-align:end;align-items:flex-end}}@media screen and (min-width:1200px){.ag-axis-Center-xl{-ms-flex-line-pack:center;align-content:center;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;text-align:center}}.ag-Grid-xs{-ms-grid-columns:minmax(220px,1fr);grid-template-columns:minmax(220px,1fr)}@media screen and (min-width:320px){.ag-Grid-s{-ms-grid-columns:(1fr)[2];grid-template-columns:repeat(2,1fr)}}@media screen and (min-width:480px){.ag-Grid-m{-ms-grid-columns:(1fr)[4];grid-template-columns:repeat(4,1fr)}}@media screen and (min-width:600px){.ag-Grid-st{-ms-grid-columns:(1fr)[6];grid-template-columns:repeat(6,1fr)}}@media screen and (min-width:768px){.ag-Grid-t{-ms-grid-columns:(1fr)[8];grid-template-columns:repeat(8,1fr)}}@media screen and (min-width:1024px){.ag-Grid-l{-ms-grid-columns:(1fr)[10];grid-template-columns:repeat(10,1fr)}}@media screen and (min-width:1200px){.ag-Grid-xl{-ms-grid-columns:(1fr)[12];grid-template-columns:repeat(12,1fr)}}.ag-Gap-xs{grid-gap:0}@media screen and (min-width:320px){.ag-Gap-s{grid-gap:1rem 1rem}}@media screen and (min-width:480px){.ag-Gap-m{grid-gap:1rem 1rem}}@media screen and (min-width:600px){.ag-Gap-st{grid-gap:1rem 1rem}}@media screen and (min-width:768px){.ag-Gap-t{grid-gap:1rem 1rem}}@media screen and (min-width:1024px){.ag-Gap-l{grid-gap:1rem 1rem}}@media screen and (min-width:1200px){.ag-Gap-xl{grid-gap:1rem 1rem}}
+/* line 1, sass/Models/_Reset.scss */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-size-adjust: 100%;
+  overflow-y: auto;
+}
+
+/* line 9, sass/Models/_Reset.scss */
+img {
+  min-width: 100%;
+  height: auto;
+}
+
+/* line 14, sass/Models/_Reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 16, sass/Models/_Reset.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Flex-S {
+  display: Flex;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Grid-S {
+  display: Grid;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Block-S {
+  display: Block;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Grid-T {
+  display: Grid;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Flex-T {
+  display: Flex;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Block-T {
+  display: Block;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Flex-TL {
+  display: Flex;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Grid-TL {
+  display: Grid;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Block-TL {
+  display: Block;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Flex-L {
+  display: Flex;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Grid-L {
+  display: Grid;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Block-L {
+  display: Block;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Flex-XL {
+  display: Flex;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Grid-XL {
+  display: Grid;
+}
+
+/* line 8, sass/Core/_CoreScss.scss */
+.ag-D-Block-XL {
+  display: Block;
+}
+
+/* line 27, sass/Core/_CoreScss.scss */
+.ag-Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* line 33, sass/Core/_CoreScss.scss */
+.ag-Item {
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media screen and (min-width: 240px) {
+  /* line 8, sass/Models/_Helps.scss */
+  .ag-Full-P-S {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 12, sass/Models/_Helps.scss */
+  .ag-Full-VH-S {
+    max-width: 100vh;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 8, sass/Models/_Helps.scss */
+  .ag-Full-P-T {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 12, sass/Models/_Helps.scss */
+  .ag-Full-VH-T {
+    max-width: 100vh;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 8, sass/Models/_Helps.scss */
+  .ag-Full-P-TL {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 12, sass/Models/_Helps.scss */
+  .ag-Full-VH-TL {
+    max-width: 100vh;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 8, sass/Models/_Helps.scss */
+  .ag-Full-P-L {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 12, sass/Models/_Helps.scss */
+  .ag-Full-VH-L {
+    max-width: 100vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 8, sass/Models/_Helps.scss */
+  .ag-Full-P-XL {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 12, sass/Models/_Helps.scss */
+  .ag-Full-VH-XL {
+    max-width: 100vh;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-1-S {
+    width: 5%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-2-S {
+    width: 10%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-3-S {
+    width: 15%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-4-S {
+    width: 20%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-5-S {
+    width: 25%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-6-S {
+    width: 30%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-7-S {
+    width: 35%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-8-S {
+    width: 40%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-9-S {
+    width: 45%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-10-S {
+    width: 50%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-11-S {
+    width: 55%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-12-S {
+    width: 60%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-13-S {
+    width: 65%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-14-S {
+    width: 70%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-15-S {
+    width: 75%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-16-S {
+    width: 80%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-17-S {
+    width: 85%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-18-S {
+    width: 90%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-19-S {
+    width: 95%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-20-S {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-1-T {
+    width: 5%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-2-T {
+    width: 10%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-3-T {
+    width: 15%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-4-T {
+    width: 20%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-5-T {
+    width: 25%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-6-T {
+    width: 30%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-7-T {
+    width: 35%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-8-T {
+    width: 40%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-9-T {
+    width: 45%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-10-T {
+    width: 50%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-11-T {
+    width: 55%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-12-T {
+    width: 60%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-13-T {
+    width: 65%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-14-T {
+    width: 70%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-15-T {
+    width: 75%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-16-T {
+    width: 80%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-17-T {
+    width: 85%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-18-T {
+    width: 90%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-19-T {
+    width: 95%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-20-T {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-1-TL {
+    width: 5%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-2-TL {
+    width: 10%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-3-TL {
+    width: 15%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-4-TL {
+    width: 20%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-5-TL {
+    width: 25%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-6-TL {
+    width: 30%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-7-TL {
+    width: 35%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-8-TL {
+    width: 40%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-9-TL {
+    width: 45%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-10-TL {
+    width: 50%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-11-TL {
+    width: 55%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-12-TL {
+    width: 60%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-13-TL {
+    width: 65%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-14-TL {
+    width: 70%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-15-TL {
+    width: 75%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-16-TL {
+    width: 80%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-17-TL {
+    width: 85%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-18-TL {
+    width: 90%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-19-TL {
+    width: 95%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-20-TL {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-1-L {
+    width: 5%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-2-L {
+    width: 10%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-3-L {
+    width: 15%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-4-L {
+    width: 20%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-5-L {
+    width: 25%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-6-L {
+    width: 30%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-7-L {
+    width: 35%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-8-L {
+    width: 40%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-9-L {
+    width: 45%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-10-L {
+    width: 50%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-11-L {
+    width: 55%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-12-L {
+    width: 60%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-13-L {
+    width: 65%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-14-L {
+    width: 70%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-15-L {
+    width: 75%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-16-L {
+    width: 80%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-17-L {
+    width: 85%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-18-L {
+    width: 90%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-19-L {
+    width: 95%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-20-L {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-1-XL {
+    width: 5%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-2-XL {
+    width: 10%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-3-XL {
+    width: 15%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-4-XL {
+    width: 20%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-5-XL {
+    width: 25%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-6-XL {
+    width: 30%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-7-XL {
+    width: 35%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-8-XL {
+    width: 40%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-9-XL {
+    width: 45%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-10-XL {
+    width: 50%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-11-XL {
+    width: 55%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-12-XL {
+    width: 60%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-13-XL {
+    width: 65%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-14-XL {
+    width: 70%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-15-XL {
+    width: 75%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-16-XL {
+    width: 80%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-17-XL {
+    width: 85%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-18-XL {
+    width: 90%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-19-XL {
+    width: 95%;
+  }
+  /* line 12, sass/Models/_SystemColumn.scss */
+  .ag-Col-20-XL {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-contents-S {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-none-S {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-hidden-S {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-visible-S {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-contents-T {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-none-T {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-hidden-T {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-visible-T {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-contents-TL {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-none-TL {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-hidden-TL {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-visible-TL {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-contents-L {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-none-L {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-hidden-L {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-visible-L {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-contents-XL {
+    display: contents;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-none-XL {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-hidden-XL {
+    visibility: hidden;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 13, sass/Models/_Visibility.scss */
+  .ag-Visibility-visible-XL {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FS-S {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FE-S {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SA-S {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SB-S {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SE-S {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-C-S {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FS-S {
+    align-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FE-S {
+    align-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SA-S {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SB-S {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FS-S {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-ST-S {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-C-S {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-C-S {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FE-S {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-ST-S {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-B-S {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-S-S {
+    justify-items: start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-C-S {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-E-S {
+    justify-items: end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-ST-S {
+    justify-items: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-S-S {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-C-S {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-E-S {
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-S-S {
+    justify-self: start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-C-S {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-E-S {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-ST-S {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-S-S {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-ST-S {
+    justify-self: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-C-S {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-E-S {
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-ST-S {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-S-S {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-C-S {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-E-S {
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-ST-S {
+    justify-content: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SB-S {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SA-S {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SE-S {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-S-S {
+    align-content: start;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-C-S {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-E-S {
+    align-content: end;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-ST-S {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SB-S {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SA-S {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SE-S {
+    align-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FS-T {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FE-T {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SA-T {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SB-T {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SE-T {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-C-T {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FS-T {
+    align-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FE-T {
+    align-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SA-T {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SB-T {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-ST-T {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-C-T {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FS-T {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-C-T {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FE-T {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-ST-T {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-B-T {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-S-T {
+    justify-items: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-C-T {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-E-T {
+    justify-items: end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-ST-T {
+    justify-items: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-S-T {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-C-T {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-E-T {
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-ST-T {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-S-T {
+    justify-self: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-C-T {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-E-T {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-ST-T {
+    justify-self: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-S-T {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-C-T {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-E-T {
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-ST-T {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-S-T {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-C-T {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-E-T {
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-ST-T {
+    justify-content: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SB-T {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SA-T {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SE-T {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-S-T {
+    align-content: start;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-C-T {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-E-T {
+    align-content: end;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-ST-T {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SB-T {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SA-T {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SE-T {
+    align-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FS-TL {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FE-TL {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SA-TL {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SB-TL {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SE-TL {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-C-TL {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FS-TL {
+    align-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FE-TL {
+    align-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SA-TL {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SB-TL {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-ST-TL {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-C-TL {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FS-TL {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-C-TL {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FE-TL {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-ST-TL {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-B-TL {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-S-TL {
+    justify-items: start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-C-TL {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-E-TL {
+    justify-items: end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-ST-TL {
+    justify-items: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-S-TL {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-C-TL {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-E-TL {
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-ST-TL {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-S-TL {
+    justify-self: start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-C-TL {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-E-TL {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-ST-TL {
+    justify-self: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-S-TL {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-C-TL {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-E-TL {
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-ST-TL {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-S-TL {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-C-TL {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-E-TL {
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-ST-TL {
+    justify-content: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SB-TL {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SA-TL {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SE-TL {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-S-TL {
+    align-content: start;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-C-TL {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-E-TL {
+    align-content: end;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-ST-TL {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SB-TL {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SA-TL {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SE-TL {
+    align-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FS-L {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FE-L {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SA-L {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SB-L {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SE-L {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-C-L {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FS-L {
+    align-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FE-L {
+    align-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SA-L {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SB-L {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-ST-L {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-C-L {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FS-L {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-C-L {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FE-L {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-ST-L {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-B-L {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-S-L {
+    justify-items: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-C-L {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-E-L {
+    justify-items: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-ST-L {
+    justify-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-S-L {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-C-L {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-E-L {
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-ST-L {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-S-L {
+    justify-self: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-C-L {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-E-L {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-ST-L {
+    justify-self: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-S-L {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-C-L {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-E-L {
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-ST-L {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-S-L {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-C-L {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-E-L {
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-ST-L {
+    justify-content: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SB-L {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SA-L {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SE-L {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-S-L {
+    align-content: start;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-C-L {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-E-L {
+    align-content: end;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-ST-L {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SB-L {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SA-L {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SE-L {
+    align-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FS-XL {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-FE-XL {
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SA-XL {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SB-XL {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-SE-XL {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-JC-C-XL {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FS-XL {
+    align-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-FE-XL {
+    align-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SA-XL {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-SB-XL {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-ST-XL {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AC-C-XL {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 142, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FS-XL {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-C-XL {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 146, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-FE-XL {
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-ST-XL {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 150, sass/Core/_CoreAlignt.scss */
+  .ag-Flex-AI-B-XL {
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-S-XL {
+    justify-items: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-C-XL {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-E-XL {
+    justify-items: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JI-ST-XL {
+    justify-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-S-XL {
+    align-items: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-C-XL {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-E-XL {
+    align-items: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AI-ST-XL {
+    align-items: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-S-XL {
+    justify-self: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-C-XL {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-E-XL {
+    justify-self: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JS-ST-XL {
+    justify-self: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-S-XL {
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-C-XL {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-E-XL {
+    align-self: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AS-ST-XL {
+    align-self: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-S-XL {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-C-XL {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-E-XL {
+    justify-content: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-ST-XL {
+    justify-content: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SB-XL {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SA-XL {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-JC-SE-XL {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-S-XL {
+    align-content: start;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-C-XL {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-E-XL {
+    align-content: end;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-ST-XL {
+    align-content: stretch;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SB-XL {
+    align-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SA-XL {
+    align-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 157, sass/Core/_CoreAlignt.scss */
+  .ag-Grid-AC-SE-XL {
+    align-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-C-S {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-CR-S {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-R-S {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-RR-S {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-W-S {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-WR-S {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-NW-S {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-C-T {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-CR-T {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-R-T {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-RR-T {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-W-T {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-WR-T {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-NW-T {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-C-TL {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-CR-TL {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-R-TL {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-RR-TL {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-W-TL {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-WR-TL {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-NW-TL {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-C-L {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-CR-L {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-R-L {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-RR-L {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-W-L {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-WR-L {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-NW-L {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-C-XL {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-CR-XL {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-R-XL {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 24, sass/Core/_CoreFlex.scss */
+  .ag-D-RR-XL {
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-W-XL {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-WR-XL {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 40, sass/Core/_CoreFlex.scss */
+  .ag-W-NW-XL {
+    flex-wrap: nowrap;
+  }
+}
+
+/* line 7, sass/Core/_CoreGrid.scss */
+.ag-autogrid {
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  grid-gap: 1rem;
+}
+
+/* line 18, sass/Core/_CoreGrid.scss */
+.ag-grid {
+  grid-template-columns: repeat(20, 1fr);
+  grid-gap: 1rem;
+}
+
+/* line 28, sass/Core/_CoreGrid.scss */
+.ag-gridRow {
+  grid-template-rows: repeat(20, 1fr);
+}
+
+@media screen and (min-width: 240px) {
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-1-S {
+    grid-column-start: 1;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-2-S {
+    grid-column-start: 2;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-3-S {
+    grid-column-start: 3;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-4-S {
+    grid-column-start: 4;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-5-S {
+    grid-column-start: 5;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-6-S {
+    grid-column-start: 6;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-7-S {
+    grid-column-start: 7;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-8-S {
+    grid-column-start: 8;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-9-S {
+    grid-column-start: 9;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-10-S {
+    grid-column-start: 10;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-11-S {
+    grid-column-start: 11;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-12-S {
+    grid-column-start: 12;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-13-S {
+    grid-column-start: 13;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-14-S {
+    grid-column-start: 14;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-15-S {
+    grid-column-start: 15;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-16-S {
+    grid-column-start: 16;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-17-S {
+    grid-column-start: 17;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-18-S {
+    grid-column-start: 18;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-19-S {
+    grid-column-start: 19;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-20-S {
+    grid-column-start: 20;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-1-S {
+    grid-column-end: span 1;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-2-S {
+    grid-column-end: span 2;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-3-S {
+    grid-column-end: span 3;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-4-S {
+    grid-column-end: span 4;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-5-S {
+    grid-column-end: span 5;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-6-S {
+    grid-column-end: span 6;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-7-S {
+    grid-column-end: span 7;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-8-S {
+    grid-column-end: span 8;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-9-S {
+    grid-column-end: span 9;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-10-S {
+    grid-column-end: span 10;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-11-S {
+    grid-column-end: span 11;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-12-S {
+    grid-column-end: span 12;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-13-S {
+    grid-column-end: span 13;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-14-S {
+    grid-column-end: span 14;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-15-S {
+    grid-column-end: span 15;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-16-S {
+    grid-column-end: span 16;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-17-S {
+    grid-column-end: span 17;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-18-S {
+    grid-column-end: span 18;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-19-S {
+    grid-column-end: span 19;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-20-S {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-1-S {
+    grid-row-start: 1;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-2-S {
+    grid-row-start: 2;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-3-S {
+    grid-row-start: 3;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-4-S {
+    grid-row-start: 4;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-5-S {
+    grid-row-start: 5;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-6-S {
+    grid-row-start: 6;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-7-S {
+    grid-row-start: 7;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-8-S {
+    grid-row-start: 8;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-9-S {
+    grid-row-start: 9;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-10-S {
+    grid-row-start: 10;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-11-S {
+    grid-row-start: 11;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-12-S {
+    grid-row-start: 12;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-13-S {
+    grid-row-start: 13;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-14-S {
+    grid-row-start: 14;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-15-S {
+    grid-row-start: 15;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-16-S {
+    grid-row-start: 16;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-17-S {
+    grid-row-start: 17;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-18-S {
+    grid-row-start: 18;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-19-S {
+    grid-row-start: 19;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-20-S {
+    grid-row-start: 20;
+  }
+}
+
+@media screen and (min-width: 240px) {
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-1-S {
+    grid-column-end: span 1;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-2-S {
+    grid-column-end: span 2;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-3-S {
+    grid-column-end: span 3;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-4-S {
+    grid-column-end: span 4;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-5-S {
+    grid-column-end: span 5;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-6-S {
+    grid-column-end: span 6;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-7-S {
+    grid-column-end: span 7;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-8-S {
+    grid-column-end: span 8;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-9-S {
+    grid-column-end: span 9;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-10-S {
+    grid-column-end: span 10;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-11-S {
+    grid-column-end: span 11;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-12-S {
+    grid-column-end: span 12;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-13-S {
+    grid-column-end: span 13;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-14-S {
+    grid-column-end: span 14;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-15-S {
+    grid-column-end: span 15;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-16-S {
+    grid-column-end: span 16;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-17-S {
+    grid-column-end: span 17;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-18-S {
+    grid-column-end: span 18;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-19-S {
+    grid-column-end: span 19;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-20-S {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-1-T {
+    grid-column-start: 1;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-2-T {
+    grid-column-start: 2;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-3-T {
+    grid-column-start: 3;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-4-T {
+    grid-column-start: 4;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-5-T {
+    grid-column-start: 5;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-6-T {
+    grid-column-start: 6;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-7-T {
+    grid-column-start: 7;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-8-T {
+    grid-column-start: 8;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-9-T {
+    grid-column-start: 9;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-10-T {
+    grid-column-start: 10;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-11-T {
+    grid-column-start: 11;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-12-T {
+    grid-column-start: 12;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-13-T {
+    grid-column-start: 13;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-14-T {
+    grid-column-start: 14;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-15-T {
+    grid-column-start: 15;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-16-T {
+    grid-column-start: 16;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-17-T {
+    grid-column-start: 17;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-18-T {
+    grid-column-start: 18;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-19-T {
+    grid-column-start: 19;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-20-T {
+    grid-column-start: 20;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-1-T {
+    grid-column-end: span 1;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-2-T {
+    grid-column-end: span 2;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-3-T {
+    grid-column-end: span 3;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-4-T {
+    grid-column-end: span 4;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-5-T {
+    grid-column-end: span 5;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-6-T {
+    grid-column-end: span 6;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-7-T {
+    grid-column-end: span 7;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-8-T {
+    grid-column-end: span 8;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-9-T {
+    grid-column-end: span 9;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-10-T {
+    grid-column-end: span 10;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-11-T {
+    grid-column-end: span 11;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-12-T {
+    grid-column-end: span 12;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-13-T {
+    grid-column-end: span 13;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-14-T {
+    grid-column-end: span 14;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-15-T {
+    grid-column-end: span 15;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-16-T {
+    grid-column-end: span 16;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-17-T {
+    grid-column-end: span 17;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-18-T {
+    grid-column-end: span 18;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-19-T {
+    grid-column-end: span 19;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-20-T {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-1-T {
+    grid-row-start: 1;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-2-T {
+    grid-row-start: 2;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-3-T {
+    grid-row-start: 3;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-4-T {
+    grid-row-start: 4;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-5-T {
+    grid-row-start: 5;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-6-T {
+    grid-row-start: 6;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-7-T {
+    grid-row-start: 7;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-8-T {
+    grid-row-start: 8;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-9-T {
+    grid-row-start: 9;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-10-T {
+    grid-row-start: 10;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-11-T {
+    grid-row-start: 11;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-12-T {
+    grid-row-start: 12;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-13-T {
+    grid-row-start: 13;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-14-T {
+    grid-row-start: 14;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-15-T {
+    grid-row-start: 15;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-16-T {
+    grid-row-start: 16;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-17-T {
+    grid-row-start: 17;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-18-T {
+    grid-row-start: 18;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-19-T {
+    grid-row-start: 19;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-20-T {
+    grid-row-start: 20;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-1-T {
+    grid-column-end: span 1;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-2-T {
+    grid-column-end: span 2;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-3-T {
+    grid-column-end: span 3;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-4-T {
+    grid-column-end: span 4;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-5-T {
+    grid-column-end: span 5;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-6-T {
+    grid-column-end: span 6;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-7-T {
+    grid-column-end: span 7;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-8-T {
+    grid-column-end: span 8;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-9-T {
+    grid-column-end: span 9;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-10-T {
+    grid-column-end: span 10;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-11-T {
+    grid-column-end: span 11;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-12-T {
+    grid-column-end: span 12;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-13-T {
+    grid-column-end: span 13;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-14-T {
+    grid-column-end: span 14;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-15-T {
+    grid-column-end: span 15;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-16-T {
+    grid-column-end: span 16;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-17-T {
+    grid-column-end: span 17;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-18-T {
+    grid-column-end: span 18;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-19-T {
+    grid-column-end: span 19;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-20-T {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-1-TL {
+    grid-column-start: 1;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-2-TL {
+    grid-column-start: 2;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-3-TL {
+    grid-column-start: 3;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-4-TL {
+    grid-column-start: 4;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-5-TL {
+    grid-column-start: 5;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-6-TL {
+    grid-column-start: 6;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-7-TL {
+    grid-column-start: 7;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-8-TL {
+    grid-column-start: 8;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-9-TL {
+    grid-column-start: 9;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-10-TL {
+    grid-column-start: 10;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-11-TL {
+    grid-column-start: 11;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-12-TL {
+    grid-column-start: 12;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-13-TL {
+    grid-column-start: 13;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-14-TL {
+    grid-column-start: 14;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-15-TL {
+    grid-column-start: 15;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-16-TL {
+    grid-column-start: 16;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-17-TL {
+    grid-column-start: 17;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-18-TL {
+    grid-column-start: 18;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-19-TL {
+    grid-column-start: 19;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-20-TL {
+    grid-column-start: 20;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-1-TL {
+    grid-column-end: span 1;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-2-TL {
+    grid-column-end: span 2;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-3-TL {
+    grid-column-end: span 3;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-4-TL {
+    grid-column-end: span 4;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-5-TL {
+    grid-column-end: span 5;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-6-TL {
+    grid-column-end: span 6;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-7-TL {
+    grid-column-end: span 7;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-8-TL {
+    grid-column-end: span 8;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-9-TL {
+    grid-column-end: span 9;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-10-TL {
+    grid-column-end: span 10;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-11-TL {
+    grid-column-end: span 11;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-12-TL {
+    grid-column-end: span 12;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-13-TL {
+    grid-column-end: span 13;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-14-TL {
+    grid-column-end: span 14;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-15-TL {
+    grid-column-end: span 15;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-16-TL {
+    grid-column-end: span 16;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-17-TL {
+    grid-column-end: span 17;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-18-TL {
+    grid-column-end: span 18;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-19-TL {
+    grid-column-end: span 19;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-20-TL {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-1-TL {
+    grid-row-start: 1;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-2-TL {
+    grid-row-start: 2;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-3-TL {
+    grid-row-start: 3;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-4-TL {
+    grid-row-start: 4;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-5-TL {
+    grid-row-start: 5;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-6-TL {
+    grid-row-start: 6;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-7-TL {
+    grid-row-start: 7;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-8-TL {
+    grid-row-start: 8;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-9-TL {
+    grid-row-start: 9;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-10-TL {
+    grid-row-start: 10;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-11-TL {
+    grid-row-start: 11;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-12-TL {
+    grid-row-start: 12;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-13-TL {
+    grid-row-start: 13;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-14-TL {
+    grid-row-start: 14;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-15-TL {
+    grid-row-start: 15;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-16-TL {
+    grid-row-start: 16;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-17-TL {
+    grid-row-start: 17;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-18-TL {
+    grid-row-start: 18;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-19-TL {
+    grid-row-start: 19;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-20-TL {
+    grid-row-start: 20;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-1-TL {
+    grid-column-end: span 1;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-2-TL {
+    grid-column-end: span 2;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-3-TL {
+    grid-column-end: span 3;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-4-TL {
+    grid-column-end: span 4;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-5-TL {
+    grid-column-end: span 5;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-6-TL {
+    grid-column-end: span 6;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-7-TL {
+    grid-column-end: span 7;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-8-TL {
+    grid-column-end: span 8;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-9-TL {
+    grid-column-end: span 9;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-10-TL {
+    grid-column-end: span 10;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-11-TL {
+    grid-column-end: span 11;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-12-TL {
+    grid-column-end: span 12;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-13-TL {
+    grid-column-end: span 13;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-14-TL {
+    grid-column-end: span 14;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-15-TL {
+    grid-column-end: span 15;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-16-TL {
+    grid-column-end: span 16;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-17-TL {
+    grid-column-end: span 17;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-18-TL {
+    grid-column-end: span 18;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-19-TL {
+    grid-column-end: span 19;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-20-TL {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-1-L {
+    grid-column-start: 1;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-2-L {
+    grid-column-start: 2;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-3-L {
+    grid-column-start: 3;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-4-L {
+    grid-column-start: 4;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-5-L {
+    grid-column-start: 5;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-6-L {
+    grid-column-start: 6;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-7-L {
+    grid-column-start: 7;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-8-L {
+    grid-column-start: 8;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-9-L {
+    grid-column-start: 9;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-10-L {
+    grid-column-start: 10;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-11-L {
+    grid-column-start: 11;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-12-L {
+    grid-column-start: 12;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-13-L {
+    grid-column-start: 13;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-14-L {
+    grid-column-start: 14;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-15-L {
+    grid-column-start: 15;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-16-L {
+    grid-column-start: 16;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-17-L {
+    grid-column-start: 17;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-18-L {
+    grid-column-start: 18;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-19-L {
+    grid-column-start: 19;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-20-L {
+    grid-column-start: 20;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-1-L {
+    grid-column-end: span 1;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-2-L {
+    grid-column-end: span 2;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-3-L {
+    grid-column-end: span 3;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-4-L {
+    grid-column-end: span 4;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-5-L {
+    grid-column-end: span 5;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-6-L {
+    grid-column-end: span 6;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-7-L {
+    grid-column-end: span 7;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-8-L {
+    grid-column-end: span 8;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-9-L {
+    grid-column-end: span 9;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-10-L {
+    grid-column-end: span 10;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-11-L {
+    grid-column-end: span 11;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-12-L {
+    grid-column-end: span 12;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-13-L {
+    grid-column-end: span 13;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-14-L {
+    grid-column-end: span 14;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-15-L {
+    grid-column-end: span 15;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-16-L {
+    grid-column-end: span 16;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-17-L {
+    grid-column-end: span 17;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-18-L {
+    grid-column-end: span 18;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-19-L {
+    grid-column-end: span 19;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-20-L {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-1-L {
+    grid-row-start: 1;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-2-L {
+    grid-row-start: 2;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-3-L {
+    grid-row-start: 3;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-4-L {
+    grid-row-start: 4;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-5-L {
+    grid-row-start: 5;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-6-L {
+    grid-row-start: 6;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-7-L {
+    grid-row-start: 7;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-8-L {
+    grid-row-start: 8;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-9-L {
+    grid-row-start: 9;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-10-L {
+    grid-row-start: 10;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-11-L {
+    grid-row-start: 11;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-12-L {
+    grid-row-start: 12;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-13-L {
+    grid-row-start: 13;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-14-L {
+    grid-row-start: 14;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-15-L {
+    grid-row-start: 15;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-16-L {
+    grid-row-start: 16;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-17-L {
+    grid-row-start: 17;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-18-L {
+    grid-row-start: 18;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-19-L {
+    grid-row-start: 19;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-20-L {
+    grid-row-start: 20;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-1-L {
+    grid-column-end: span 1;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-2-L {
+    grid-column-end: span 2;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-3-L {
+    grid-column-end: span 3;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-4-L {
+    grid-column-end: span 4;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-5-L {
+    grid-column-end: span 5;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-6-L {
+    grid-column-end: span 6;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-7-L {
+    grid-column-end: span 7;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-8-L {
+    grid-column-end: span 8;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-9-L {
+    grid-column-end: span 9;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-10-L {
+    grid-column-end: span 10;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-11-L {
+    grid-column-end: span 11;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-12-L {
+    grid-column-end: span 12;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-13-L {
+    grid-column-end: span 13;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-14-L {
+    grid-column-end: span 14;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-15-L {
+    grid-column-end: span 15;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-16-L {
+    grid-column-end: span 16;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-17-L {
+    grid-column-end: span 17;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-18-L {
+    grid-column-end: span 18;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-19-L {
+    grid-column-end: span 19;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-20-L {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-1-XL {
+    grid-column-start: 1;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-2-XL {
+    grid-column-start: 2;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-3-XL {
+    grid-column-start: 3;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-4-XL {
+    grid-column-start: 4;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-5-XL {
+    grid-column-start: 5;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-6-XL {
+    grid-column-start: 6;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-7-XL {
+    grid-column-start: 7;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-8-XL {
+    grid-column-start: 8;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-9-XL {
+    grid-column-start: 9;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-10-XL {
+    grid-column-start: 10;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-11-XL {
+    grid-column-start: 11;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-12-XL {
+    grid-column-start: 12;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-13-XL {
+    grid-column-start: 13;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-14-XL {
+    grid-column-start: 14;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-15-XL {
+    grid-column-start: 15;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-16-XL {
+    grid-column-start: 16;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-17-XL {
+    grid-column-start: 17;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-18-XL {
+    grid-column-start: 18;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-19-XL {
+    grid-column-start: 19;
+  }
+  /* line 40, sass/Core/_CoreGrid.scss */
+  .ag-Col-G-20-XL {
+    grid-column-start: 20;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-1-XL {
+    grid-column-end: span 1;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-2-XL {
+    grid-column-end: span 2;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-3-XL {
+    grid-column-end: span 3;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-4-XL {
+    grid-column-end: span 4;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-5-XL {
+    grid-column-end: span 5;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-6-XL {
+    grid-column-end: span 6;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-7-XL {
+    grid-column-end: span 7;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-8-XL {
+    grid-column-end: span 8;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-9-XL {
+    grid-column-end: span 9;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-10-XL {
+    grid-column-end: span 10;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-11-XL {
+    grid-column-end: span 11;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-12-XL {
+    grid-column-end: span 12;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-13-XL {
+    grid-column-end: span 13;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-14-XL {
+    grid-column-end: span 14;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-15-XL {
+    grid-column-end: span 15;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-16-XL {
+    grid-column-end: span 16;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-17-XL {
+    grid-column-end: span 17;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-18-XL {
+    grid-column-end: span 18;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-19-XL {
+    grid-column-end: span 19;
+  }
+  /* line 54, sass/Core/_CoreGrid.scss */
+  .ag-Col-Span-20-XL {
+    grid-column-end: span 20;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-1-XL {
+    grid-row-start: 1;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-2-XL {
+    grid-row-start: 2;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-3-XL {
+    grid-row-start: 3;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-4-XL {
+    grid-row-start: 4;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-5-XL {
+    grid-row-start: 5;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-6-XL {
+    grid-row-start: 6;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-7-XL {
+    grid-row-start: 7;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-8-XL {
+    grid-row-start: 8;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-9-XL {
+    grid-row-start: 9;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-10-XL {
+    grid-row-start: 10;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-11-XL {
+    grid-row-start: 11;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-12-XL {
+    grid-row-start: 12;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-13-XL {
+    grid-row-start: 13;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-14-XL {
+    grid-row-start: 14;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-15-XL {
+    grid-row-start: 15;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-16-XL {
+    grid-row-start: 16;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-17-XL {
+    grid-row-start: 17;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-18-XL {
+    grid-row-start: 18;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-19-XL {
+    grid-row-start: 19;
+  }
+  /* line 68, sass/Core/_CoreGrid.scss */
+  .ag-Row-20-XL {
+    grid-row-start: 20;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-1-XL {
+    grid-column-end: span 1;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-2-XL {
+    grid-column-end: span 2;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-3-XL {
+    grid-column-end: span 3;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-4-XL {
+    grid-column-end: span 4;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-5-XL {
+    grid-column-end: span 5;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-6-XL {
+    grid-column-end: span 6;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-7-XL {
+    grid-column-end: span 7;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-8-XL {
+    grid-column-end: span 8;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-9-XL {
+    grid-column-end: span 9;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-10-XL {
+    grid-column-end: span 10;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-11-XL {
+    grid-column-end: span 11;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-12-XL {
+    grid-column-end: span 12;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-13-XL {
+    grid-column-end: span 13;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-14-XL {
+    grid-column-end: span 14;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-15-XL {
+    grid-column-end: span 15;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-16-XL {
+    grid-column-end: span 16;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-17-XL {
+    grid-column-end: span 17;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-18-XL {
+    grid-column-end: span 18;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-19-XL {
+    grid-column-end: span 19;
+  }
+  /* line 82, sass/Core/_CoreGrid.scss */
+  .ag-Row-Span-20-XL {
+    grid-column-end: span 20;
+  }
+}
+
+/* line 62, sass/Prototipe/_Buttons.scss */
+.ag-Button {
+  display: inline-block;
+  padding: .8em 1.4em;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+/* line 68, sass/Prototipe/_Buttons.scss */
+.ag-Button-Radius {
+  border-radius: 1rem;
+}
+
 /*# sourceMappingURL=ArronaGrid.css.map */

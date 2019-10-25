@@ -1,0 +1,165 @@
+$Align:(
+    SB  : space-between,
+    SA  : space-around,
+    SE  : space-evenly,
+    ST  : stretch,
+    B   : baseline,
+    S   : start,
+    C   : center,
+    E   : end
+)!default;
+
+$Properties:(
+    JC  : JustifyContent,
+    AC  : AlignContent,
+    JI  : JustifyItem,
+    AI  : AlignItem,
+    JS  : JustifySelf,
+    AS  : AlignSelf,
+)!default;
+
+@mixin ag-Align($Display,$P,$Al){
+    @if $Display == Flex {
+        @if map-has-key($Properties, $P){
+            @if $P == JC{
+                @if map-has-key($Align, $Al){
+                    @if $Al == ST or $Al == B or $Al == A{
+                        @warn "";
+                    }@else if $Al == S{
+                        justify-content: flex-start
+                    }@else if $Al == E{
+                        justify-content: flex-end
+                    }@else{
+                        justify-content:#{map-get($Align,$Al)};
+                    }
+                }
+            }@else if $P == AC{
+                @if map-has-key($Align, $Al){
+                    @if $Al == SE or $Al == B or $Al == A{
+                        @warn "";
+                    }@else if $Al == S{
+                        align-content: flex-start
+                    }@else if $Al == E{
+                        align-content: flex-end
+                    }@else{
+                        align-content:#{map-get($Align,$Al)};
+                    }
+                }
+            }@else if $P == AI{
+                @if map-has-key($Align, $Al){
+                    @if $Al == SA or $Al == SB or $Al == SE or $Al == A{
+                        @warn "";
+                    }@else if $Al == S{
+                        align-items: flex-start
+                    }@else if $Al == E{
+                        align-items: flex-end
+                    }@else if $Al == B{
+                        align-items: baseline
+                    }@else if $Al == C{
+                        align-items: center
+                    }@else if $Al == ST{
+                        align-items: stretch
+                    }@else{
+                        align-items:#{map-get($Align,$Al)};
+                    }
+                }
+            }@else if $P == AS{
+                @if map-has-key($Align, $Al){
+                    @if $Al == SA or $Al == SB or $Al == SE{
+                        @warn "";
+                    }@else if $Al == S{
+                        align-self: flex-start
+                    }@else if $Al == E{
+                        align-self: flex-end
+                    }@else{
+                        align-self:#{map-get($Align,$Al)};
+                    }
+                }
+            }
+        }
+    }@else if $Display == Grid{
+        @if map-has-key($Properties, $P){
+            @if $P == JC {
+                @if map-has-key($Align, $Al){
+                    @if $Al == B{
+                        @warn "Error";
+                    }@else{
+                        justify-content:#{map-get($Align,$Al)};
+                    }
+                }
+            }@else if $P == AC{
+                @if map-has-key($Align, $Al){
+                    @if $Al == B{
+                        @warn "Error";
+                    }@else{
+                        align-content:#{map-get($Align,$Al)};
+                    }
+                }
+            }@else if $P == JI{
+                @if map-has-key($Align, $Al){
+                    @if $Al == S or $Al == C or $Al = E or $Al == ST{
+                        justify-items:#{map-get($Align,$Al)};
+                    }@else{
+                        @warn "Error";
+                    }
+                }
+            }@else if $P == AI{
+                @if map-has-key($Align, $Al){
+                    @if $Al == S or $Al == C or $Al = E or $Al == ST or $Al == C{
+                        align-items:#{map-get($Align,$Al)};
+                    }@else{
+                        @warn "Error";
+                    }
+                }
+            }@else if $P == JS{
+                @if map-has-key($Align, $Al){
+                    @if $Al == S or $Al == C or $Al = E or $Al == ST{
+                        justify-self:#{map-get($Align,$Al)};
+                    }@else{
+                        @warn "Error";
+                    }
+                }
+            }@else if $P == AS{
+                @if map-has-key($Align, $Al){
+                    @if $Al == S or $Al == C or $Al = E or $Al == ST{
+                        align-self:#{map-get($Align,$Al)};
+                    }@else{
+                        @warn "Error";
+                    }
+                }
+            }
+        }
+    }@else{
+        @warn "Error";
+    }
+}
+
+@mixin ag-Align-css($Display, $P, $Al,$NameSpace, $Breackpoint){
+    @include MediaQuery($Breackpoint){
+        @if $Display == Flex{
+            @if map-has-key($Align, $Al){
+                @if $Al == S{
+                    .#{$NameSpace}-#{$Display}-#{$P}-FS-#{$Breackpoint}{
+                        @include ag-Align($Display,$P,$Al);
+                    }
+                }@else if $Al == E{
+                    .#{$NameSpace}-#{$Display}-#{$P}-FE-#{$Breackpoint}{
+                        @include ag-Align($Display,$P,$Al);
+                    }
+                }@else{
+                    .#{$NameSpace}-#{$Display}-#{$P}-#{$Al}-#{$Breackpoint}{
+                        @include ag-Align($Display,$P,$Al);
+                    }
+                }
+            }
+        }@else if $Display == Grid{
+            @if map-has-key($Properties, $P){
+                .#{$NameSpace}-#{$Display}-#{$P}-#{$Al}-#{$Breackpoint}{
+                    @include ag-Align($Display,$P,$Al);
+                }
+            }
+        }@else{
+            @warn "";
+        }
+    }
+}

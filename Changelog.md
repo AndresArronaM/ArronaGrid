@@ -20,6 +20,7 @@
 * Se actualizo Autoprefixer
 
 ## V0.1.5-Beta
+
 * Renombracion de las clases css y Mixins sass
     * _buttons.scss
     
@@ -80,3 +81,27 @@
     |.Full-Layout|.ag-Full-Layout|
     |fullCss()|ag-Full-css|
     |.Full|.ag-Full|
+
+## V0.1.6-Beta
+
+* Se modifico el sistema de carpetas.
+* Se actualizo Gulp de su version 3 a la version 4.
+* Se eliminaron las variables `$Item` y `$container`. Y se sustituyeron por las clases `.ag-Item` y `.ag-container`
+* Se modifico la clase `.ag-container` eliminado la propiedad `display`.
+* Se elimino el archivo `Flexbox.scss` y fue remplazado por los archivos `_CoreFlex` y `_CoreAlign`.
+* Al mixin `ag-Align` se le agregaron mas opciones para darle la posibilidad al usuario de usar el resto de los valores compatibles con la especificacion de `CSS Grid`.
+* Al archivo `_CoreGrid` (antes `Grid.scss`) se le agregaron las siguentes funciones:
+    * `ag-autogrid`
+    * `ag-autogrid-css`
+    * `ag-gridRow`
+    * `ag-gridRow-css`
+    * `ag-grid-columns`
+    * `ag-grid-columns-css`
+    * `ag-grid-columns-span`
+    * `ag-grid-columns-span-css`
+    * `ag-grid-rows`
+    * `ag-grid-rows-css`
+    * `ag-grid-rows-span`
+    * `ag-grid-rows-span-css`
+* Se creo el archivo `_SystemColumn.scss` el cual sirve para generar el sistema de columnas.
+* Se creo el archivo `_Visibility` el cual tiene el codigo nesesario para ocultar elementos.

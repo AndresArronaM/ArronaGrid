@@ -58,12 +58,14 @@
     border-radius:1rem;
 }
 
-@mixin ag-Button-css($Gap){
-    .#{$nameSpace}-Button{
+@mixin ag-Button-css($NameSpace,$Gap){
+    .#{$NameSpace}-Button{
         @include ag-Button($Gap);
+    }
+}
 
-        &-Radius{
-            @include ag-Radius;
-        }
+@mixin ag-Button-Radius-css($NameSpace){
+    .#{$NameSpace}-Button-Radius{
+        @include ag-Radius;
     }
 }

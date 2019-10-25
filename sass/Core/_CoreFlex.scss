@@ -1,0 +1,44 @@
+$Direction:(
+    C   : column,
+    CR  : column-reverse,
+    R   : row,
+    RR  : row-reverse
+)!default;
+
+$Wrap:(
+    W   :wrap,
+    WR  :wrap-reverse,
+    NW  :nowrap
+)!default;
+
+@mixin ag-Direccion($Dr){
+    @if map-has-key($Direction,$Dr){
+        flex-direction:#{map-get($Direction,$Dr)};
+    }@else{
+        @error "Valor no aceptado por la variable `$Direccion` en el mixin `ag-Direccion()`";
+    }
+}
+
+@mixin ag-Direccion-css($Dr, $NameSpace, $Breackpoint){
+    @include MediaQuery($Breackpoint){
+        .#{$NameSpace}-D-#{$Dr}-#{$Breackpoint}{
+            @include ag-Direccion($Dr);
+        }
+    }
+}
+
+@mixin ag-Wrap($Wr){
+    @if map-has-key($Wrap,$Wr){
+        flex-wrap:#{map-get($Wrap,$Wr)};
+    }@else{
+        @error "Valor no aceptado por la variable `$Direccion` en el mixin `ag-Direccion()`";
+    }
+}
+
+@mixin ag-Wrap-css($Wr, $NameSpace, $Breackpoint){
+    @include MediaQuery($Breackpoint){
+        .#{$NameSpace}-W-#{$Wr}-#{$Breackpoint}{
+            @include ag-Wrap($Wr);
+        }
+    }
+}
